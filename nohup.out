@@ -1,0 +1,499 @@
+[I 2025-08-05 12:15:01.931 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-08-05 12:15:01.934 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[W 2025-08-05 12:15:01.935 LabApp] 'token' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-08-05 12:15:01.935 LabApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-08-05 12:15:01.937 ServerApp] ServerApp.token config is deprecated in 2.0. Use IdentityProvider.token.
+[I 2025-08-05 12:15:01.937 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-08-05 12:15:01.937 ServerApp] Writing Jupyter server cookie secret to /home/opc/.local/share/jupyter/runtime/jupyter_cookie_secret
+[I 2025-08-05 12:15:02.156 ServerApp] notebook_shim | extension was successfully linked.
+[W 2025-08-05 12:15:02.170 ServerApp] All authentication is disabled.  Anyone who can connect to this server will be able to run code.
+[I 2025-08-05 12:15:02.171 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-08-05 12:15:02.172 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-08-05 12:15:02.173 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-08-05 12:15:02.175 LabApp] JupyterLab extension loaded from /home/opc/.local/lib/python3.11/site-packages/jupyterlab
+[I 2025-08-05 12:15:02.175 LabApp] JupyterLab application directory is /home/opc/.local/share/jupyter/lab
+[I 2025-08-05 12:15:02.176 LabApp] Extension Manager is 'pypi'.
+[I 2025-08-05 12:15:02.202 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-08-05 12:15:02.203 ServerApp] Serving notebooks from local directory: /home/opc/labs
+[I 2025-08-05 12:15:02.203 ServerApp] Jupyter Server 2.16.0 is running at:
+[I 2025-08-05 12:15:02.203 ServerApp] http://gen-ai-labs:8888/lab
+[I 2025-08-05 12:15:02.203 ServerApp]     http://127.0.0.1:8888/lab
+[I 2025-08-05 12:15:02.203 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-08-05 12:15:02.216 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2025-08-05 12:47:52.586 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-08-05 12:47:52.588 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[W 2025-08-05 12:47:52.589 LabApp] 'token' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-08-05 12:47:52.589 LabApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-08-05 12:47:52.591 ServerApp] ServerApp.token config is deprecated in 2.0. Use IdentityProvider.token.
+[I 2025-08-05 12:47:52.591 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-08-05 12:47:52.781 ServerApp] notebook_shim | extension was successfully linked.
+[W 2025-08-05 12:47:52.792 ServerApp] All authentication is disabled.  Anyone who can connect to this server will be able to run code.
+[I 2025-08-05 12:47:52.792 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-08-05 12:47:52.793 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-08-05 12:47:52.794 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-08-05 12:47:52.795 LabApp] JupyterLab extension loaded from /home/opc/.local/lib/python3.11/site-packages/jupyterlab
+[I 2025-08-05 12:47:52.795 LabApp] JupyterLab application directory is /home/opc/.local/share/jupyter/lab
+[I 2025-08-05 12:47:52.796 LabApp] Extension Manager is 'pypi'.
+[I 2025-08-05 12:47:52.815 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-08-05 12:47:52.815 ServerApp] The port 8888 is already in use, trying another port.
+[I 2025-08-05 12:47:52.815 ServerApp] The port 8889 is already in use, trying another port.
+[I 2025-08-05 12:47:52.816 ServerApp] The port 8890 is already in use, trying another port.
+[I 2025-08-05 12:47:52.816 ServerApp] The port 8891 is already in use, trying another port.
+[I 2025-08-05 12:47:52.816 ServerApp] The port 8892 is already in use, trying another port.
+[I 2025-08-05 12:47:52.816 ServerApp] Serving notebooks from local directory: /home/opc/labs
+[I 2025-08-05 12:47:52.816 ServerApp] Jupyter Server 2.16.0 is running at:
+[I 2025-08-05 12:47:52.816 ServerApp] http://gen-ai-labs:8977/lab
+[I 2025-08-05 12:47:52.816 ServerApp]     http://127.0.0.1:8977/lab
+[I 2025-08-05 12:47:52.816 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-08-05 12:47:52.829 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2025-08-06 04:38:39.884 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-08-06 04:38:39.886 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[W 2025-08-06 04:38:39.887 LabApp] 'token' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-08-06 04:38:39.887 LabApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-08-06 04:38:39.889 ServerApp] ServerApp.token config is deprecated in 2.0. Use IdentityProvider.token.
+[I 2025-08-06 04:38:39.889 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-08-06 04:38:40.074 ServerApp] notebook_shim | extension was successfully linked.
+[W 2025-08-06 04:38:40.085 ServerApp] All authentication is disabled.  Anyone who can connect to this server will be able to run code.
+[I 2025-08-06 04:38:40.085 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-08-06 04:38:40.086 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-08-06 04:38:40.087 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-08-06 04:38:40.088 LabApp] JupyterLab extension loaded from /home/opc/.local/lib/python3.11/site-packages/jupyterlab
+[I 2025-08-06 04:38:40.088 LabApp] JupyterLab application directory is /home/opc/.local/share/jupyter/lab
+[I 2025-08-06 04:38:40.088 LabApp] Extension Manager is 'pypi'.
+[I 2025-08-06 04:38:40.107 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-08-06 04:38:40.107 ServerApp] The port 8888 is already in use, trying another port.
+[I 2025-08-06 04:38:40.107 ServerApp] The port 8889 is already in use, trying another port.
+[I 2025-08-06 04:38:40.107 ServerApp] The port 8890 is already in use, trying another port.
+[I 2025-08-06 04:38:40.108 ServerApp] The port 8891 is already in use, trying another port.
+[I 2025-08-06 04:38:40.108 ServerApp] The port 8892 is already in use, trying another port.
+[I 2025-08-06 04:38:40.108 ServerApp] Serving notebooks from local directory: /home/opc/labs
+[I 2025-08-06 04:38:40.108 ServerApp] Jupyter Server 2.16.0 is running at:
+[I 2025-08-06 04:38:40.108 ServerApp] http://gen-ai-labs:8869/lab
+[I 2025-08-06 04:38:40.108 ServerApp]     http://127.0.0.1:8869/lab
+[I 2025-08-06 04:38:40.108 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-08-06 04:38:40.121 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2025-08-06 04:48:46.909 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-08-06 04:48:46.912 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[W 2025-08-06 04:48:46.913 LabApp] 'token' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-08-06 04:48:46.913 LabApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-08-06 04:48:46.915 ServerApp] ServerApp.token config is deprecated in 2.0. Use IdentityProvider.token.
+[I 2025-08-06 04:48:46.915 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-08-06 04:48:47.107 ServerApp] notebook_shim | extension was successfully linked.
+[W 2025-08-06 04:48:47.117 ServerApp] All authentication is disabled.  Anyone who can connect to this server will be able to run code.
+[I 2025-08-06 04:48:47.118 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-08-06 04:48:47.119 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-08-06 04:48:47.119 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-08-06 04:48:47.121 LabApp] JupyterLab extension loaded from /home/opc/.local/lib/python3.11/site-packages/jupyterlab
+[I 2025-08-06 04:48:47.121 LabApp] JupyterLab application directory is /home/opc/.local/share/jupyter/lab
+[I 2025-08-06 04:48:47.121 LabApp] Extension Manager is 'pypi'.
+[I 2025-08-06 04:48:47.140 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-08-06 04:48:47.140 ServerApp] Serving notebooks from local directory: /home/opc/labs
+[I 2025-08-06 04:48:47.141 ServerApp] Jupyter Server 2.16.0 is running at:
+[I 2025-08-06 04:48:47.141 ServerApp] http://gen-ai-labs:8888/lab
+[I 2025-08-06 04:48:47.141 ServerApp]     http://127.0.0.1:8888/lab
+[I 2025-08-06 04:48:47.141 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-08-06 04:48:47.153 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2025-08-06 04:53:31.586 ServerApp] 302 GET / (@206.126.100.12) 0.42ms
+[W 2025-08-06 04:53:46.701 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-08-06 05:32:06.396 ServerApp] Creating new file in 
+[I 2025-08-06 05:32:55.833 ServerApp] Saving file at /untitled.txt
+[E 2025-08-06 05:32:56.303 ServerApp] Uncaught exception POST /api/contents/untitled.txt/checkpoints?1754458375838 (206.126.100.12)
+    HTTPServerRequest(protocol='http', host='92.5.115.224:8888', method='POST', uri='/api/contents/untitled.txt/checkpoints?1754458375838', version='HTTP/1.1', remote_ip='206.126.100.12')
+    Traceback (most recent call last):
+      File "/home/opc/.pyenv/versions/3.11.9/lib/python3.11/site-packages/tornado/web.py", line 1848, in _execute
+        result = await result
+                 ^^^^^^^^^^^^
+      File "/home/opc/.local/lib/python3.11/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+               ^^^^^^^^^
+      File "/home/opc/.local/lib/python3.11/site-packages/jupyter_server/services/contents/handlers.py", line 358, in post
+        checkpoint = await ensure_async(cm.create_checkpoint(path))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/opc/.local/lib/python3.11/site-packages/jupyter_core/utils/__init__.py", line 197, in ensure_async
+        result = await obj
+                 ^^^^^^^^^
+      File "/home/opc/.local/lib/python3.11/site-packages/jupyter_server/services/contents/manager.py", line 1083, in create_checkpoint
+        return await self.checkpoints.create_checkpoint(self, path)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/opc/.local/lib/python3.11/site-packages/jupyter_server/services/contents/filecheckpoints.py", line 145, in create_checkpoint
+        await self._copy(src_path, dest_path)
+      File "/home/opc/.local/lib/python3.11/site-packages/jupyter_server/services/contents/fileio.py", line 470, in _copy
+        await async_copy2_safe(src, dest, log=self.log)
+      File "/home/opc/.local/lib/python3.11/site-packages/jupyter_server/services/contents/fileio.py", line 64, in async_copy2_safe
+        raise PermissionError(errno.EACCES, f"File is not writable: {src}")
+    PermissionError: [Errno 13] File is not writable: /home/opc/labs/untitled.txt
+[W 2025-08-06 05:32:56.306 ServerApp] wrote error: 'Unhandled error'
+    Traceback (most recent call last):
+      File "/home/opc/.pyenv/versions/3.11.9/lib/python3.11/site-packages/tornado/web.py", line 1848, in _execute
+        result = await result
+                 ^^^^^^^^^^^^
+      File "/home/opc/.local/lib/python3.11/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+               ^^^^^^^^^
+      File "/home/opc/.local/lib/python3.11/site-packages/jupyter_server/services/contents/handlers.py", line 358, in post
+        checkpoint = await ensure_async(cm.create_checkpoint(path))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/opc/.local/lib/python3.11/site-packages/jupyter_core/utils/__init__.py", line 197, in ensure_async
+        result = await obj
+                 ^^^^^^^^^
+      File "/home/opc/.local/lib/python3.11/site-packages/jupyter_server/services/contents/manager.py", line 1083, in create_checkpoint
+        return await self.checkpoints.create_checkpoint(self, path)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/opc/.local/lib/python3.11/site-packages/jupyter_server/services/contents/filecheckpoints.py", line 145, in create_checkpoint
+        await self._copy(src_path, dest_path)
+      File "/home/opc/.local/lib/python3.11/site-packages/jupyter_server/services/contents/fileio.py", line 470, in _copy
+        await async_copy2_safe(src, dest, log=self.log)
+      File "/home/opc/.local/lib/python3.11/site-packages/jupyter_server/services/contents/fileio.py", line 64, in async_copy2_safe
+        raise PermissionError(errno.EACCES, f"File is not writable: {src}")
+    PermissionError: [Errno 13] File is not writable: /home/opc/labs/untitled.txt
+[E 2025-08-06 05:32:56.306 ServerApp] {
+      "Host": "92.5.115.224:8888",
+      "Accept": "*/*",
+      "Referer": "http://92.5.115.224:8888/lab/tree/untitled.txt",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+    }
+[E 2025-08-06 05:32:56.306 ServerApp] 500 POST /api/contents/untitled.txt/checkpoints?1754458375838 (8d9db3c37b0c44a98aac8a4a08cc8bcc@206.126.100.12) 3.96ms referer=http://92.5.115.224:8888/lab/tree/untitled.txt
+[I 2025-08-06 05:39:16.663 ServerApp] Saving file at /config.txt
+[I 2025-08-06 05:39:18.145 ServerApp] Saving file at /config.txt
+[W 2025-08-06 05:57:26.881 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2025-08-06 05:57:27.597 ServerApp] 404 GET /api/contents/untitled.txt?content=0&hash=0&1754459847124 (8d9db3c37b0c44a98aac8a4a08cc8bcc@206.126.100.0) 0.82ms referer=http://92.5.115.224:8888/lab/tree/config.txt
+[W 2025-08-06 05:57:27.597 ServerApp] 404 GET /api/contents/untitled.txt?content=0&hash=0&1754459847124 (206.126.100.0): No such file or directory: untitled.txt
+[I 2025-08-06 06:30:42.650 ServerApp] Saving file at /config.txt
+[I 2025-08-06 06:34:27.154 ServerApp] Uploading file to /ou-generativeai-pro-main.zip
+[I 2025-08-06 06:34:29.043 ServerApp] Saving file at /ou-generativeai-pro-main.zip
+[W 2025-08-06 06:34:41.704 ServerApp] delete /ou-generativeai-pro-main.zip
+[I 2025-08-06 06:40:07.260 ServerApp] Creating new notebook in 
+[I 2025-08-06 06:40:07.297 ServerApp] Writing notebook-signing key to /home/opc/.local/share/jupyter/notebook_secret
+[I 2025-08-06 06:40:14.415 ServerApp] Kernel started: e080fb25-b657-4621-911a-e8828b459d15
+[I 2025-08-06 06:40:15.107 ServerApp] Connecting to kernel e080fb25-b657-4621-911a-e8828b459d15.
+[W 2025-08-06 06:40:15.108 ServerApp] The websocket_ping_timeout (90000) cannot be longer than the websocket_ping_interval (30000).
+    Setting websocket_ping_timeout=30000
+[I 2025-08-06 06:40:15.127 ServerApp] Connecting to kernel e080fb25-b657-4621-911a-e8828b459d15.
+[I 2025-08-06 06:40:15.641 ServerApp] Connecting to kernel e080fb25-b657-4621-911a-e8828b459d15.
+[I 2025-08-06 06:40:36.919 ServerApp] Saving file at /Untitled.ipynb
+[I 2025-08-06 06:42:38.037 ServerApp] Saving file at /Lab1.ipynb
+[I 2025-08-06 06:43:31.611 ServerApp] Saving file at /Lab1.ipynb
+[I 2025-08-06 06:45:32.363 ServerApp] Saving file at /Lab1.ipynb
+[I 2025-08-06 06:47:33.114 ServerApp] Saving file at /Lab1.ipynb
+[I 2025-08-06 06:50:35.623 ServerApp] Kernel shutdown: e080fb25-b657-4621-911a-e8828b459d15
+[W 2025-08-06 06:50:36.299 ServerApp] delete /Lab1.ipynb
+[I 2025-08-06 06:50:37.046 ServerApp] Creating new directory in 
+[W 2025-08-06 06:50:46.386 ServerApp] delete /Untitled Folder
+[I 2025-08-06 06:50:59.344 ServerApp] Uploading file to /Lab1.ipynb
+[I 2025-08-06 06:50:59.361 ServerApp] Uploading file to /Lab2.ipynb
+[W 2025-08-06 06:51:15.074 ServerApp] Notebook Lab1.ipynb is not trusted
+[I 2025-08-06 06:51:16.086 ServerApp] Kernel started: 30c9e1b6-c73d-4bd7-a4e2-76a572cdd5e9
+[I 2025-08-06 06:51:16.783 ServerApp] Connecting to kernel 30c9e1b6-c73d-4bd7-a4e2-76a572cdd5e9.
+[W 2025-08-06 06:51:55.770 ServerApp] Notebook Lab2.ipynb is not trusted
+[I 2025-08-06 06:51:56.747 ServerApp] Kernel started: fa7ac1cc-5df0-488e-a1b6-14ced3820966
+[I 2025-08-06 06:51:57.430 ServerApp] Connecting to kernel fa7ac1cc-5df0-488e-a1b6-14ced3820966.
+[I 2025-08-06 06:53:15.694 ServerApp] Saving file at /Lab1.ipynb
+[I 2025-08-06 06:53:56.397 ServerApp] Saving file at /Lab2.ipynb
+[I 2025-08-06 06:58:29.285 ServerApp] Starting buffering for 30c9e1b6-c73d-4bd7-a4e2-76a572cdd5e9:bca74b2e-ae2d-4901-a228-88ef4c372aa1
+[I 2025-08-06 06:58:29.285 ServerApp] Starting buffering for fa7ac1cc-5df0-488e-a1b6-14ced3820966:4b38cbe7-df6b-4310-8067-09cbfbf067c1
+[W 2025-08-06 06:58:31.150 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-08-06 06:58:31.418 ServerApp] Connecting to kernel 30c9e1b6-c73d-4bd7-a4e2-76a572cdd5e9.
+[I 2025-08-06 06:58:31.439 ServerApp] Connecting to kernel fa7ac1cc-5df0-488e-a1b6-14ced3820966.
+[W 2025-08-06 06:58:31.842 ServerApp] 404 GET /api/contents/Untitled.ipynb?content=0&hash=0&1754463511366 (8d9db3c37b0c44a98aac8a4a08cc8bcc@206.126.100.0) 1.42ms referer=http://92.5.115.224:8888/lab/tree/Lab1.ipynb
+[W 2025-08-06 06:58:31.842 ServerApp] 404 GET /api/contents/Untitled.ipynb?content=0&hash=0&1754463511366 (206.126.100.0): No such file or directory: Untitled.ipynb
+[I 2025-08-06 06:58:31.870 ServerApp] Starting buffering for 30c9e1b6-c73d-4bd7-a4e2-76a572cdd5e9:7cac8105-7496-45c7-acd0-bfedd1d43c12
+[I 2025-08-06 06:58:31.887 ServerApp] Starting buffering for fa7ac1cc-5df0-488e-a1b6-14ced3820966:39e1860b-5ff6-468b-aaee-32dddfa127ab
+[I 2025-08-06 06:58:33.414 ServerApp] Connecting to kernel 30c9e1b6-c73d-4bd7-a4e2-76a572cdd5e9.
+[I 2025-08-06 06:58:33.744 ServerApp] Connecting to kernel fa7ac1cc-5df0-488e-a1b6-14ced3820966.
+[I 2025-08-06 07:22:50.859 ServerApp] Saving file at /Lab2.ipynb
+[I 2025-08-06 08:47:22.415 ServerApp] Starting buffering for fa7ac1cc-5df0-488e-a1b6-14ced3820966:b193bbf9-9160-41c9-a20c-26172a97fb3a
+[I 2025-08-06 08:47:22.417 ServerApp] Starting buffering for 30c9e1b6-c73d-4bd7-a4e2-76a572cdd5e9:d8251401-f0c3-402f-ac8e-ad7c19a829ff
+[W 2025-08-06 08:47:24.032 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-08-06 08:47:24.295 ServerApp] Connecting to kernel 30c9e1b6-c73d-4bd7-a4e2-76a572cdd5e9.
+[I 2025-08-06 08:47:24.358 ServerApp] Connecting to kernel fa7ac1cc-5df0-488e-a1b6-14ced3820966.
+[I 2025-08-06 08:47:24.736 ServerApp] Starting buffering for 30c9e1b6-c73d-4bd7-a4e2-76a572cdd5e9:54346d2b-08fe-4d30-984f-a20d63d98d96
+[I 2025-08-06 08:47:24.797 ServerApp] Starting buffering for fa7ac1cc-5df0-488e-a1b6-14ced3820966:a53d3607-4ea4-48f7-9311-b1171e6147f6
+[I 2025-08-06 08:47:26.408 ServerApp] Connecting to kernel 30c9e1b6-c73d-4bd7-a4e2-76a572cdd5e9.
+[I 2025-08-06 08:47:26.430 ServerApp] Connecting to kernel fa7ac1cc-5df0-488e-a1b6-14ced3820966.
+[I 2025-08-06 09:02:18.908 ServerApp] Creating new notebook in 
+[I 2025-08-06 09:02:23.033 ServerApp] Kernel started: 72c5ab46-f155-4cbf-8841-32b1c6ab5287
+[I 2025-08-06 09:02:23.700 ServerApp] Connecting to kernel 72c5ab46-f155-4cbf-8841-32b1c6ab5287.
+[I 2025-08-06 09:02:33.365 ServerApp] Saving file at /Untitled.ipynb
+[I 2025-08-06 09:04:34.738 ServerApp] Saving file at /Lab3.ipynb
+[I 2025-08-06 09:06:35.725 ServerApp] Saving file at /Lab3.ipynb
+[I 2025-08-06 09:08:36.476 ServerApp] Saving file at /Lab3.ipynb
+[I 2025-08-06 09:10:37.230 ServerApp] Saving file at /Lab3.ipynb
+[I 2025-08-06 09:12:37.975 ServerApp] Saving file at /Lab3.ipynb
+[I 2025-08-06 09:14:39.027 ServerApp] Saving file at /Lab3.ipynb
+[I 2025-08-06 09:16:40.125 ServerApp] Saving file at /Lab3.ipynb
+[I 2025-08-06 09:18:41.149 ServerApp] Saving file at /Lab3.ipynb
+[I 2025-08-06 09:20:42.977 ServerApp] Saving file at /Lab3.ipynb
+[I 2025-08-06 09:22:44.957 ServerApp] Saving file at /Lab3.ipynb
+[I 2025-08-06 09:24:45.979 ServerApp] Saving file at /Lab3.ipynb
+[I 2025-08-06 09:28:48.167 ServerApp] Saving file at /Lab3.ipynb
+[I 2025-08-06 09:30:49.391 ServerApp] Saving file at /Lab3.ipynb
+[I 2025-08-06 09:32:50.536 ServerApp] Saving file at /Lab3.ipynb
+[I 2025-08-06 09:34:52.099 ServerApp] Saving file at /Lab3.ipynb
+[W 2025-08-06 10:10:53.701 ServerApp] WebSocket ping timeout after 119809 ms.
+[W 2025-08-06 10:10:56.409 ServerApp] WebSocket ping timeout after 119806 ms.
+[W 2025-08-06 10:10:56.431 ServerApp] WebSocket ping timeout after 119808 ms.
+[I 2025-08-06 10:10:58.703 ServerApp] Starting buffering for 72c5ab46-f155-4cbf-8841-32b1c6ab5287:d96f6e87-78e9-40db-9d29-a7903b6cb78f
+[I 2025-08-06 10:11:01.411 ServerApp] Starting buffering for 30c9e1b6-c73d-4bd7-a4e2-76a572cdd5e9:a1ee5251-9bf9-4917-8431-ccfc85d37ba8
+[I 2025-08-06 10:11:01.432 ServerApp] Starting buffering for fa7ac1cc-5df0-488e-a1b6-14ced3820966:1d5ceef8-68a5-4371-be2e-93e86793d90e
+[I 2025-08-06 12:12:46.110 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-08-06 12:12:46.113 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[W 2025-08-06 12:12:46.114 LabApp] 'token' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-08-06 12:12:46.114 LabApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-08-06 12:12:46.116 ServerApp] ServerApp.token config is deprecated in 2.0. Use IdentityProvider.token.
+[I 2025-08-06 12:12:46.116 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-08-06 12:12:46.319 ServerApp] notebook_shim | extension was successfully linked.
+[W 2025-08-06 12:12:46.334 ServerApp] All authentication is disabled.  Anyone who can connect to this server will be able to run code.
+[I 2025-08-06 12:12:46.334 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-08-06 12:12:46.336 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-08-06 12:12:46.337 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-08-06 12:12:46.339 LabApp] JupyterLab extension loaded from /home/opc/.local/lib/python3.11/site-packages/jupyterlab
+[I 2025-08-06 12:12:46.339 LabApp] JupyterLab application directory is /home/opc/.local/share/jupyter/lab
+[I 2025-08-06 12:12:46.339 LabApp] Extension Manager is 'pypi'.
+[I 2025-08-06 12:12:46.361 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-08-06 12:12:46.361 ServerApp] The port 8888 is already in use, trying another port.
+[I 2025-08-06 12:12:46.361 ServerApp] The port 8889 is already in use, trying another port.
+[I 2025-08-06 12:12:46.362 ServerApp] The port 8890 is already in use, trying another port.
+[I 2025-08-06 12:12:46.362 ServerApp] The port 8891 is already in use, trying another port.
+[I 2025-08-06 12:12:46.362 ServerApp] The port 8892 is already in use, trying another port.
+[I 2025-08-06 12:12:46.362 ServerApp] Serving notebooks from local directory: /home/opc/labs
+[I 2025-08-06 12:12:46.362 ServerApp] Jupyter Server 2.16.0 is running at:
+[I 2025-08-06 12:12:46.362 ServerApp] http://gen-ai-labs:8788/lab
+[I 2025-08-06 12:12:46.362 ServerApp]     http://127.0.0.1:8788/lab
+[I 2025-08-06 12:12:46.362 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-08-06 12:12:46.375 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2025-08-06 12:15:01.770 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-08-06 12:15:01.773 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[W 2025-08-06 12:15:01.774 LabApp] 'token' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-08-06 12:15:01.774 LabApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-08-06 12:15:01.776 ServerApp] ServerApp.token config is deprecated in 2.0. Use IdentityProvider.token.
+[I 2025-08-06 12:15:01.776 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-08-06 12:15:01.970 ServerApp] notebook_shim | extension was successfully linked.
+[W 2025-08-06 12:15:01.980 ServerApp] All authentication is disabled.  Anyone who can connect to this server will be able to run code.
+[I 2025-08-06 12:15:01.981 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-08-06 12:15:01.982 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-08-06 12:15:01.983 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-08-06 12:15:01.984 LabApp] JupyterLab extension loaded from /home/opc/.local/lib/python3.11/site-packages/jupyterlab
+[I 2025-08-06 12:15:01.984 LabApp] JupyterLab application directory is /home/opc/.local/share/jupyter/lab
+[I 2025-08-06 12:15:01.984 LabApp] Extension Manager is 'pypi'.
+[I 2025-08-06 12:15:02.003 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-08-06 12:15:02.003 ServerApp] The port 8888 is already in use, trying another port.
+[I 2025-08-06 12:15:02.003 ServerApp] The port 8889 is already in use, trying another port.
+[I 2025-08-06 12:15:02.004 ServerApp] The port 8890 is already in use, trying another port.
+[I 2025-08-06 12:15:02.004 ServerApp] The port 8891 is already in use, trying another port.
+[I 2025-08-06 12:15:02.004 ServerApp] The port 8892 is already in use, trying another port.
+[I 2025-08-06 12:15:02.004 ServerApp] Serving notebooks from local directory: /home/opc/labs
+[I 2025-08-06 12:15:02.004 ServerApp] Jupyter Server 2.16.0 is running at:
+[I 2025-08-06 12:15:02.004 ServerApp] http://gen-ai-labs:8956/lab
+[I 2025-08-06 12:15:02.004 ServerApp]     http://127.0.0.1:8956/lab
+[I 2025-08-06 12:15:02.004 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-08-06 12:15:02.017 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2025-08-06 12:15:07.505 ServerApp] 302 GET / (@192.188.171.30) 0.34ms
+[W 2025-08-06 12:15:09.869 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-08-06 12:15:10.157 ServerApp] Connecting to kernel 30c9e1b6-c73d-4bd7-a4e2-76a572cdd5e9.
+[I 2025-08-06 12:15:10.166 ServerApp] Connecting to kernel fa7ac1cc-5df0-488e-a1b6-14ced3820966.
+[I 2025-08-06 12:15:10.170 ServerApp] Connecting to kernel 72c5ab46-f155-4cbf-8841-32b1c6ab5287.
+[W 2025-08-06 12:15:10.544 ServerApp] 404 GET /api/contents/Untitled.ipynb?content=0&hash=0&1754482510029 (8d9db3c37b0c44a98aac8a4a08cc8bcc@192.188.171.30) 0.36ms referer=http://92.5.115.224:8888/lab?
+[W 2025-08-06 12:15:10.544 ServerApp] 404 GET /api/contents/Untitled.ipynb?content=0&hash=0&1754482510029 (192.188.171.30): No such file or directory: Untitled.ipynb
+[I 2025-08-06 12:15:10.736 ServerApp] Starting buffering for fa7ac1cc-5df0-488e-a1b6-14ced3820966:0f3fef0b-7701-4270-917c-d2a34fad6071
+[I 2025-08-06 12:15:10.736 ServerApp] Starting buffering for 30c9e1b6-c73d-4bd7-a4e2-76a572cdd5e9:fb5951f6-e5e0-4185-a871-83068d58f293
+[I 2025-08-06 12:15:10.736 ServerApp] Starting buffering for 72c5ab46-f155-4cbf-8841-32b1c6ab5287:18ec7c33-9153-4961-8af1-9f5e7b6f88db
+[I 2025-08-06 12:15:12.260 ServerApp] Connecting to kernel 30c9e1b6-c73d-4bd7-a4e2-76a572cdd5e9.
+[I 2025-08-06 12:15:12.263 ServerApp] Connecting to kernel fa7ac1cc-5df0-488e-a1b6-14ced3820966.
+[I 2025-08-06 12:15:12.855 ServerApp] Connecting to kernel 72c5ab46-f155-4cbf-8841-32b1c6ab5287.
+[I 2025-08-06 12:15:18.116 ServerApp] Starting buffering for fa7ac1cc-5df0-488e-a1b6-14ced3820966:935c90ff-a1c1-4517-996e-591b4e524014
+[I 2025-08-06 12:15:19.409 ServerApp] Starting buffering for 30c9e1b6-c73d-4bd7-a4e2-76a572cdd5e9:8956a45f-c784-465b-bd14-6a557d1dd529
+[I 2025-08-06 12:15:27.841 ServerApp] Kernel shutdown: 72c5ab46-f155-4cbf-8841-32b1c6ab5287
+[W 2025-08-06 12:15:29.610 ServerApp] delete /Lab3.ipynb
+[I 2025-08-06 12:15:36.287 ServerApp] Uploading file to /Lab4.ipynb
+[I 2025-08-06 12:15:36.916 ServerApp] Uploading file to /Lab3.ipynb
+[W 2025-08-06 12:15:39.412 ServerApp] Notebook Lab3.ipynb is not trusted
+[I 2025-08-06 12:15:41.098 ServerApp] Kernel started: 6684a8ac-a3f1-4466-92f5-961694027053
+[I 2025-08-06 12:15:41.768 ServerApp] Connecting to kernel 6684a8ac-a3f1-4466-92f5-961694027053.
+[W 2025-08-06 12:16:13.215 ServerApp] Notebook Lab4.ipynb is not trusted
+[I 2025-08-06 12:16:14.248 ServerApp] Kernel started: d817b2e1-e05a-4dfb-b5c0-34a7cd0900ac
+[I 2025-08-06 12:16:14.910 ServerApp] Connecting to kernel d817b2e1-e05a-4dfb-b5c0-34a7cd0900ac.
+[I 2025-08-06 12:17:41.216 ServerApp] Saving file at /Lab3.ipynb
+[I 2025-08-06 12:18:13.811 ServerApp] Saving file at /Lab4.ipynb
+[I 2025-08-06 12:23:42.505 ServerApp] Saving file at /Lab3.ipynb
+[I 2025-08-06 12:24:14.560 ServerApp] Saving file at /Lab4.ipynb
+[I 2025-08-06 13:10:03.850 ServerApp] Starting buffering for d817b2e1-e05a-4dfb-b5c0-34a7cd0900ac:2ad6170b-9f36-4ae0-abe8-eb3ce127858e
+[I 2025-08-06 13:10:03.851 ServerApp] Starting buffering for 6684a8ac-a3f1-4466-92f5-961694027053:5395de24-d7a9-437f-83d3-4b6f69f1674a
+[I 2025-08-07 04:29:06.026 ServerApp] 302 GET / (@206.126.100.108) 0.36ms
+[W 2025-08-07 04:29:11.956 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-08-07 04:29:12.267 ServerApp] Connecting to kernel 30c9e1b6-c73d-4bd7-a4e2-76a572cdd5e9.
+[I 2025-08-07 04:29:12.510 ServerApp] Connecting to kernel fa7ac1cc-5df0-488e-a1b6-14ced3820966.
+[I 2025-08-07 04:29:12.514 ServerApp] Connecting to kernel 6684a8ac-a3f1-4466-92f5-961694027053.
+[I 2025-08-07 04:29:12.516 ServerApp] Connecting to kernel d817b2e1-e05a-4dfb-b5c0-34a7cd0900ac.
+[I 2025-08-07 04:29:12.847 ServerApp] Starting buffering for 30c9e1b6-c73d-4bd7-a4e2-76a572cdd5e9:aff9e322-caf0-4b4a-863b-5a0950432d5a
+[I 2025-08-07 04:29:12.953 ServerApp] Starting buffering for fa7ac1cc-5df0-488e-a1b6-14ced3820966:ef841373-b8ff-4754-a773-9e13a1255e48
+[I 2025-08-07 04:29:12.953 ServerApp] Starting buffering for 6684a8ac-a3f1-4466-92f5-961694027053:736849f7-c7fa-4bbc-848e-263b64f9ddaf
+[I 2025-08-07 04:29:12.961 ServerApp] Starting buffering for d817b2e1-e05a-4dfb-b5c0-34a7cd0900ac:76e50b46-31ad-4042-accf-021c1fde3742
+[I 2025-08-07 04:29:14.744 ServerApp] Connecting to kernel d817b2e1-e05a-4dfb-b5c0-34a7cd0900ac.
+[I 2025-08-07 04:29:15.191 ServerApp] Connecting to kernel 6684a8ac-a3f1-4466-92f5-961694027053.
+[I 2025-08-07 04:35:30.701 ServerApp] Saving file at /Lab4.ipynb
+[I 2025-08-07 04:35:31.649 ServerApp] Saving file at /Lab4.ipynb
+[I 2025-08-07 04:36:21.339 ServerApp] Saving file at /Lab4.ipynb
+[I 2025-08-07 04:36:22.290 ServerApp] Saving file at /Lab4.ipynb
+[I 2025-08-07 04:37:50.523 ServerApp] Saving file at /Lab4.ipynb
+[I 2025-08-07 04:38:16.271 ServerApp] Saving file at /Lab4.ipynb
+[I 2025-08-07 04:38:25.040 ServerApp] Saving file at /Lab4.ipynb
+[I 2025-08-07 04:39:42.910 ServerApp] Saving file at /Lab4.ipynb
+[I 2025-08-07 06:09:17.828 ServerApp] Starting buffering for d817b2e1-e05a-4dfb-b5c0-34a7cd0900ac:af31bcff-0547-4197-beca-c3352e0bb382
+[I 2025-08-07 06:09:17.828 ServerApp] Starting buffering for 6684a8ac-a3f1-4466-92f5-961694027053:a6e44583-eb4d-4144-b12f-5b243a4b6b9e
+[W 2025-08-07 06:09:19.911 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-08-07 06:09:20.260 ServerApp] Connecting to kernel 30c9e1b6-c73d-4bd7-a4e2-76a572cdd5e9.
+[I 2025-08-07 06:09:20.281 ServerApp] Connecting to kernel fa7ac1cc-5df0-488e-a1b6-14ced3820966.
+[I 2025-08-07 06:09:20.301 ServerApp] Connecting to kernel 6684a8ac-a3f1-4466-92f5-961694027053.
+[I 2025-08-07 06:09:20.303 ServerApp] Connecting to kernel d817b2e1-e05a-4dfb-b5c0-34a7cd0900ac.
+[I 2025-08-07 06:09:20.710 ServerApp] Starting buffering for 30c9e1b6-c73d-4bd7-a4e2-76a572cdd5e9:bd9cbba2-c4a5-422e-9ce4-5fc7106cab01
+[I 2025-08-07 06:09:20.939 ServerApp] Starting buffering for fa7ac1cc-5df0-488e-a1b6-14ced3820966:a5f6528c-b484-48f3-afb0-e7487ef49ffa
+[I 2025-08-07 06:09:20.940 ServerApp] Starting buffering for 6684a8ac-a3f1-4466-92f5-961694027053:898c972f-cb8a-46f7-b519-54b747a6ff7b
+[I 2025-08-07 06:09:20.940 ServerApp] Starting buffering for d817b2e1-e05a-4dfb-b5c0-34a7cd0900ac:d5b886a5-c62b-455e-819c-1ee2f48bf6df
+[I 2025-08-07 06:09:22.878 ServerApp] Connecting to kernel d817b2e1-e05a-4dfb-b5c0-34a7cd0900ac.
+[I 2025-08-07 06:09:23.058 ServerApp] Connecting to kernel 6684a8ac-a3f1-4466-92f5-961694027053.
+[I 2025-08-07 07:25:56.784 ServerApp] Uploading file to /Lab5-practice2.ipynb
+[I 2025-08-07 07:25:56.805 ServerApp] Uploading file to /Lab5-practice1.ipynb
+[W 2025-08-07 07:26:05.111 ServerApp] Notebook Lab5-practice1.ipynb is not trusted
+[I 2025-08-07 07:26:06.178 ServerApp] Kernel started: 3b639e18-c208-4cd1-bca3-821ed217a68b
+[I 2025-08-07 07:26:06.911 ServerApp] Connecting to kernel 3b639e18-c208-4cd1-bca3-821ed217a68b.
+[W 2025-08-07 07:26:23.631 ServerApp] Notebook Lab5-practice2.ipynb is not trusted
+[I 2025-08-07 07:26:24.725 ServerApp] Kernel started: 273a768a-08e2-4374-b983-1fdd3a802613
+[I 2025-08-07 07:26:25.448 ServerApp] Connecting to kernel 273a768a-08e2-4374-b983-1fdd3a802613.
+[I 2025-08-07 07:28:06.225 ServerApp] Saving file at /Lab5-practice1.ipynb
+[I 2025-08-07 07:28:24.215 ServerApp] Saving file at /Lab5-practice2.ipynb
+[I 2025-08-07 07:30:07.221 ServerApp] Saving file at /Lab5-practice1.ipynb
+[I 2025-08-07 07:32:49.831 ServerApp] Saving file at /Lab5-practice1.ipynb
+[I 2025-08-07 07:34:51.195 ServerApp] Saving file at /Lab5-practice1.ipynb
+[I 2025-08-07 08:54:16.652 ServerApp] Saving file at /Lab5-practice1.ipynb
+[I 2025-08-07 08:54:16.674 ServerApp] Saving file at /Lab5-practice2.ipynb
+[I 2025-08-07 08:58:18.215 ServerApp] Saving file at /Lab5-practice2.ipynb
+[I 2025-08-07 09:00:18.926 ServerApp] Saving file at /Lab5-practice2.ipynb
+[I 2025-08-07 09:02:19.636 ServerApp] Saving file at /Lab5-practice2.ipynb
+[I 2025-08-07 09:04:20.527 ServerApp] Saving file at /Lab5-practice2.ipynb
+[I 2025-08-07 09:06:21.248 ServerApp] Saving file at /Lab5-practice2.ipynb
+[I 2025-08-07 09:06:35.036 ServerApp] Saving file at /Lab5-practice2.ipynb
+[I 2025-08-07 09:08:08.898 ServerApp] Saving file at /Lab5-practice2.ipynb
+[I 2025-08-07 09:08:09.899 ServerApp] Saving file at /Lab5-practice2.ipynb
+[I 2025-08-07 09:10:10.240 ServerApp] Saving file at /Lab5-practice2.ipynb
+[I 2025-08-07 09:39:52.540 ServerApp] Starting buffering for 6684a8ac-a3f1-4466-92f5-961694027053:c74319f2-a001-4b8d-9e30-81e1f2f7cdbc
+[I 2025-08-07 09:39:52.540 ServerApp] Starting buffering for 3b639e18-c208-4cd1-bca3-821ed217a68b:b6484e78-2e01-40e2-8622-2b3f7cde62d5
+[I 2025-08-07 09:39:52.540 ServerApp] Starting buffering for d817b2e1-e05a-4dfb-b5c0-34a7cd0900ac:9c5d47a3-7808-4154-8574-908bf41e1d0b
+[I 2025-08-07 09:39:52.541 ServerApp] Starting buffering for 273a768a-08e2-4374-b983-1fdd3a802613:075f5c19-a27f-44e3-aaca-af443ac91dc0
+[W 2025-08-07 09:39:55.903 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-08-07 09:39:56.187 ServerApp] Connecting to kernel 30c9e1b6-c73d-4bd7-a4e2-76a572cdd5e9.
+[I 2025-08-07 09:39:56.208 ServerApp] Connecting to kernel fa7ac1cc-5df0-488e-a1b6-14ced3820966.
+[I 2025-08-07 09:39:56.639 ServerApp] Starting buffering for 30c9e1b6-c73d-4bd7-a4e2-76a572cdd5e9:115adbad-d243-413a-8026-b813bbbad67e
+[I 2025-08-07 09:39:56.818 ServerApp] Starting buffering for fa7ac1cc-5df0-488e-a1b6-14ced3820966:333f4a3e-a765-461e-a661-cc12f7b6de2f
+[I 2025-08-07 09:39:57.178 ServerApp] Connecting to kernel 6684a8ac-a3f1-4466-92f5-961694027053.
+[I 2025-08-07 09:39:57.200 ServerApp] Connecting to kernel d817b2e1-e05a-4dfb-b5c0-34a7cd0900ac.
+[I 2025-08-07 09:39:57.222 ServerApp] Connecting to kernel 3b639e18-c208-4cd1-bca3-821ed217a68b.
+[I 2025-08-07 09:39:57.224 ServerApp] Connecting to kernel 273a768a-08e2-4374-b983-1fdd3a802613.
+[I 2025-08-07 09:39:57.618 ServerApp] Starting buffering for 6684a8ac-a3f1-4466-92f5-961694027053:4e0b84dd-49f8-43be-acec-03ac281d989b
+[I 2025-08-07 09:39:57.631 ServerApp] Starting buffering for d817b2e1-e05a-4dfb-b5c0-34a7cd0900ac:6dad3061-c526-4d06-a63e-27c7723240ad
+[I 2025-08-07 09:39:57.667 ServerApp] Starting buffering for 3b639e18-c208-4cd1-bca3-821ed217a68b:674da74f-eeb5-40cc-9baa-f114d6569598
+[I 2025-08-07 09:39:59.361 ServerApp] Connecting to kernel 3b639e18-c208-4cd1-bca3-821ed217a68b.
+[I 2025-08-07 09:39:59.423 ServerApp] Connecting to kernel d817b2e1-e05a-4dfb-b5c0-34a7cd0900ac.
+[I 2025-08-07 09:39:59.963 ServerApp] Connecting to kernel 273a768a-08e2-4374-b983-1fdd3a802613.
+[I 2025-08-07 09:40:01.830 ServerApp] Connecting to kernel 6684a8ac-a3f1-4466-92f5-961694027053.
+[I 2025-08-07 09:41:12.262 ServerApp] Kernel restarted: 273a768a-08e2-4374-b983-1fdd3a802613
+[I 2025-08-07 09:41:12.726 ServerApp] Connecting to kernel 273a768a-08e2-4374-b983-1fdd3a802613.
+[I 2025-08-07 09:41:59.228 ServerApp] Saving file at /Lab5-practice2.ipynb
+[I 2025-08-07 09:44:39.930 ServerApp] Starting buffering for 3b639e18-c208-4cd1-bca3-821ed217a68b:96bf70d4-8581-4245-a111-d425a92c5b4e
+[I 2025-08-07 09:44:39.930 ServerApp] Starting buffering for 6684a8ac-a3f1-4466-92f5-961694027053:cdb4fcf6-d899-4769-8193-169daadf5704
+[I 2025-08-07 09:44:39.931 ServerApp] Starting buffering for d817b2e1-e05a-4dfb-b5c0-34a7cd0900ac:abf13660-860a-4704-8021-d934f7a372f0
+[I 2025-08-07 09:44:39.931 ServerApp] Starting buffering for 273a768a-08e2-4374-b983-1fdd3a802613:55910cbd-772a-4c3f-837a-f8ca0cb3adf8
+[W 2025-08-07 09:44:42.275 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-08-07 09:44:42.592 ServerApp] Connecting to kernel 30c9e1b6-c73d-4bd7-a4e2-76a572cdd5e9.
+[I 2025-08-07 09:44:42.654 ServerApp] Connecting to kernel fa7ac1cc-5df0-488e-a1b6-14ced3820966.
+[I 2025-08-07 09:44:42.658 ServerApp] Connecting to kernel d817b2e1-e05a-4dfb-b5c0-34a7cd0900ac.
+[I 2025-08-07 09:44:42.660 ServerApp] Connecting to kernel 6684a8ac-a3f1-4466-92f5-961694027053.
+[I 2025-08-07 09:44:42.662 ServerApp] Connecting to kernel 273a768a-08e2-4374-b983-1fdd3a802613.
+[I 2025-08-07 09:44:42.663 ServerApp] Connecting to kernel 3b639e18-c208-4cd1-bca3-821ed217a68b.
+[I 2025-08-07 09:44:43.470 ServerApp] Starting buffering for 30c9e1b6-c73d-4bd7-a4e2-76a572cdd5e9:3f9eadab-2b9b-4e89-b3e0-7db308ada14e
+[I 2025-08-07 09:44:43.470 ServerApp] Starting buffering for d817b2e1-e05a-4dfb-b5c0-34a7cd0900ac:33b541f6-64bd-4978-baa1-9b177a577671
+[I 2025-08-07 09:44:43.471 ServerApp] Starting buffering for 6684a8ac-a3f1-4466-92f5-961694027053:663a311c-3ae1-4318-a768-dff871978dbe
+[I 2025-08-07 09:44:43.471 ServerApp] Starting buffering for fa7ac1cc-5df0-488e-a1b6-14ced3820966:008bdbfe-04bf-4097-9291-a9c5ac1717d9
+[I 2025-08-07 09:44:43.479 ServerApp] Starting buffering for 3b639e18-c208-4cd1-bca3-821ed217a68b:7ae4f6c4-c870-4312-bf06-6a3326c3b6f6
+[I 2025-08-07 09:44:45.232 ServerApp] Connecting to kernel 3b639e18-c208-4cd1-bca3-821ed217a68b.
+[I 2025-08-07 09:44:45.270 ServerApp] Connecting to kernel d817b2e1-e05a-4dfb-b5c0-34a7cd0900ac.
+[I 2025-08-07 09:44:45.399 ServerApp] Connecting to kernel 273a768a-08e2-4374-b983-1fdd3a802613.
+[I 2025-08-07 09:44:46.373 ServerApp] Connecting to kernel 6684a8ac-a3f1-4466-92f5-961694027053.
+[I 2025-08-07 09:55:22.579 ServerApp] Starting buffering for 3b639e18-c208-4cd1-bca3-821ed217a68b:c1e13e80-c65c-48e9-9069-b5688f9c8c16
+[I 2025-08-07 09:55:22.580 ServerApp] Starting buffering for 6684a8ac-a3f1-4466-92f5-961694027053:dabe1706-c69f-4846-89e5-5cd3c74bdf33
+[I 2025-08-07 09:55:22.580 ServerApp] Starting buffering for 273a768a-08e2-4374-b983-1fdd3a802613:265c8744-cd10-4dd9-bdab-a3916b8f5d1a
+[I 2025-08-07 09:55:22.581 ServerApp] Starting buffering for d817b2e1-e05a-4dfb-b5c0-34a7cd0900ac:c6d34b94-f05b-4303-a736-cd8ad701b97e
+[I 2025-08-07 09:55:30.134 ServerApp] 302 GET / (@206.126.100.108) 0.37ms
+[W 2025-08-07 09:55:33.432 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-08-07 09:55:33.720 ServerApp] Connecting to kernel 30c9e1b6-c73d-4bd7-a4e2-76a572cdd5e9.
+[I 2025-08-07 09:55:33.772 ServerApp] Connecting to kernel fa7ac1cc-5df0-488e-a1b6-14ced3820966.
+[I 2025-08-07 09:55:33.774 ServerApp] Connecting to kernel d817b2e1-e05a-4dfb-b5c0-34a7cd0900ac.
+[I 2025-08-07 09:55:33.775 ServerApp] Connecting to kernel 3b639e18-c208-4cd1-bca3-821ed217a68b.
+[I 2025-08-07 09:55:33.777 ServerApp] Connecting to kernel 6684a8ac-a3f1-4466-92f5-961694027053.
+[I 2025-08-07 09:55:34.248 ServerApp] Starting buffering for d817b2e1-e05a-4dfb-b5c0-34a7cd0900ac:9153d113-b7e9-466a-9dc4-a8f947ac4992
+[I 2025-08-07 09:55:34.249 ServerApp] Starting buffering for fa7ac1cc-5df0-488e-a1b6-14ced3820966:dc7acb31-e07b-4e52-bd16-a3633f0f5801
+[I 2025-08-07 09:55:34.249 ServerApp] Starting buffering for 3b639e18-c208-4cd1-bca3-821ed217a68b:828dfad9-f17e-4893-bf2b-20181019cb3d
+[I 2025-08-07 09:55:34.249 ServerApp] Starting buffering for 6684a8ac-a3f1-4466-92f5-961694027053:c0d44913-c01b-4b89-8bc5-6393ecc8220f
+[I 2025-08-07 09:55:34.699 ServerApp] Starting buffering for 30c9e1b6-c73d-4bd7-a4e2-76a572cdd5e9:9f76af95-0345-4c8c-8cbb-58b3327dcf91
+[I 2025-08-07 09:55:34.699 ServerApp] Connecting to kernel 273a768a-08e2-4374-b983-1fdd3a802613.
+[I 2025-08-07 09:55:37.412 ServerApp] Connecting to kernel d817b2e1-e05a-4dfb-b5c0-34a7cd0900ac.
+[I 2025-08-07 09:55:38.021 ServerApp] Connecting to kernel 3b639e18-c208-4cd1-bca3-821ed217a68b.
+[I 2025-08-07 09:55:38.180 ServerApp] Connecting to kernel 273a768a-08e2-4374-b983-1fdd3a802613.
+[I 2025-08-07 09:55:39.490 ServerApp] Connecting to kernel 6684a8ac-a3f1-4466-92f5-961694027053.
+[I 2025-08-07 09:56:20.968 ServerApp] Saving file at /Lab5-practice2.ipynb
+[I 2025-08-07 09:57:26.169 ServerApp] Saving file at /Lab5-practice2.ipynb
+[I 2025-08-07 09:57:27.679 ServerApp] Starting buffering for 3b639e18-c208-4cd1-bca3-821ed217a68b:d21856de-7876-4567-a8f7-4bcf5dfacb6b
+[I 2025-08-07 09:57:28.289 ServerApp] Starting buffering for d817b2e1-e05a-4dfb-b5c0-34a7cd0900ac:5f607141-2f90-4994-a636-9af42e84f4c1
+[I 2025-08-07 09:57:30.438 ServerApp] Starting buffering for 6684a8ac-a3f1-4466-92f5-961694027053:92e5f423-0dbe-4415-aaa7-1ad2137ae83a
+[I 2025-08-07 09:57:32.971 ServerApp] Starting buffering for 273a768a-08e2-4374-b983-1fdd3a802613:302e95b6-5018-429d-9d84-bced21ca2b7d
+[W 2025-08-07 09:57:35.915 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-08-07 09:57:36.180 ServerApp] Connecting to kernel 30c9e1b6-c73d-4bd7-a4e2-76a572cdd5e9.
+[I 2025-08-07 09:57:36.184 ServerApp] Connecting to kernel fa7ac1cc-5df0-488e-a1b6-14ced3820966.
+[I 2025-08-07 09:57:36.185 ServerApp] Connecting to kernel 6684a8ac-a3f1-4466-92f5-961694027053.
+[I 2025-08-07 09:57:36.231 ServerApp] Connecting to kernel d817b2e1-e05a-4dfb-b5c0-34a7cd0900ac.
+[I 2025-08-07 09:57:36.234 ServerApp] Connecting to kernel 3b639e18-c208-4cd1-bca3-821ed217a68b.
+[I 2025-08-07 09:57:36.236 ServerApp] Connecting to kernel 273a768a-08e2-4374-b983-1fdd3a802613.
+[I 2025-08-07 09:57:36.658 ServerApp] Starting buffering for 6684a8ac-a3f1-4466-92f5-961694027053:b3315be4-8452-4eff-9c09-10ca1d6435bb
+[I 2025-08-07 09:57:36.659 ServerApp] Starting buffering for 30c9e1b6-c73d-4bd7-a4e2-76a572cdd5e9:38052e8d-129c-4e8c-b376-c2d2dcab051e
+[I 2025-08-07 09:57:36.659 ServerApp] Starting buffering for fa7ac1cc-5df0-488e-a1b6-14ced3820966:64969efe-ac52-4cec-afe9-e630f0126106
+[I 2025-08-07 09:57:36.869 ServerApp] Starting buffering for d817b2e1-e05a-4dfb-b5c0-34a7cd0900ac:c5562fbd-f52a-422b-b959-ce62366a0b60
+[I 2025-08-07 09:57:36.950 ServerApp] Starting buffering for 3b639e18-c208-4cd1-bca3-821ed217a68b:d337abcb-8ec8-4a35-9aa8-529842fbd3bd
+[I 2025-08-07 09:57:45.220 ServerApp] Connecting to kernel 273a768a-08e2-4374-b983-1fdd3a802613.
+[I 2025-08-07 09:59:45.288 ServerApp] Saving file at /Lab5-practice2.ipynb
+[I 2025-08-07 10:00:35.603 ServerApp] Kernel shutdown: 273a768a-08e2-4374-b983-1fdd3a802613
+[W 2025-08-07 10:00:36.643 ServerApp] delete /Lab5-practice2.ipynb
+[I 2025-08-07 10:00:42.927 ServerApp] Uploading file to /Lab5-practice2.ipynb
+[W 2025-08-07 10:00:45.313 ServerApp] Notebook Lab5-practice2.ipynb is not trusted
+[I 2025-08-07 10:00:46.872 ServerApp] Kernel started: e8492ba7-7e45-4a1b-9021-d78a6fc374e8
+[I 2025-08-07 10:00:48.633 ServerApp] Connecting to kernel e8492ba7-7e45-4a1b-9021-d78a6fc374e8.
+[I 2025-08-07 10:01:36.828 ServerApp] Starting buffering for e8492ba7-7e45-4a1b-9021-d78a6fc374e8:f9b8e2b8-6d4f-43a3-9b61-7b13a054986d
+[I 2025-08-07 10:01:43.882 ServerApp] Kernel shutdown: e8492ba7-7e45-4a1b-9021-d78a6fc374e8
+[W 2025-08-07 10:01:44.922 ServerApp] delete /Lab5-practice2.ipynb
+[I 2025-08-07 10:04:26.660 ServerApp] Uploading file to /Lab5-practice2.ipynb
+[W 2025-08-07 10:04:29.608 ServerApp] Notebook Lab5-practice2.ipynb is not trusted
+[I 2025-08-07 10:04:31.096 ServerApp] Kernel started: 9ee6d643-836e-478d-b01f-4bd97e3f4b1a
+[I 2025-08-07 10:04:31.956 ServerApp] Connecting to kernel 9ee6d643-836e-478d-b01f-4bd97e3f4b1a.
+[I 2025-08-07 10:04:47.028 ServerApp] Saving file at /Lab5-practice2.ipynb
+[I 2025-08-07 10:04:47.797 ServerApp] Saving file at /Lab5-practice2.ipynb
+[I 2025-08-07 10:04:50.680 ServerApp] Saving file at /Lab5-practice2.ipynb
+[I 2025-08-07 10:05:07.540 ServerApp] Saving file at /Lab5-practice2.ipynb
+[I 2025-08-07 10:07:09.680 ServerApp] Saving file at /Lab5-practice2.ipynb
+[I 2025-08-07 10:14:46.081 ServerApp] Starting buffering for 9ee6d643-836e-478d-b01f-4bd97e3f4b1a:e02fe58a-0417-42e8-b12f-7919653b7daf
+[W 2025-08-07 10:37:39.345 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-08-07 10:37:39.580 ServerApp] Connecting to kernel 30c9e1b6-c73d-4bd7-a4e2-76a572cdd5e9.
+[I 2025-08-07 10:37:39.583 ServerApp] Connecting to kernel fa7ac1cc-5df0-488e-a1b6-14ced3820966.
+[I 2025-08-07 10:37:39.603 ServerApp] Connecting to kernel 6684a8ac-a3f1-4466-92f5-961694027053.
+[I 2025-08-07 10:37:39.604 ServerApp] Connecting to kernel d817b2e1-e05a-4dfb-b5c0-34a7cd0900ac.
+[I 2025-08-07 10:37:39.606 ServerApp] Connecting to kernel 9ee6d643-836e-478d-b01f-4bd97e3f4b1a.
+[I 2025-08-07 10:37:39.606 ServerApp] Discarding 2 buffered messages for 9ee6d643-836e-478d-b01f-4bd97e3f4b1a:e02fe58a-0417-42e8-b12f-7919653b7daf
+[I 2025-08-07 10:37:39.607 ServerApp] Connecting to kernel 3b639e18-c208-4cd1-bca3-821ed217a68b.
+[I 2025-08-07 10:37:40.003 ServerApp] Starting buffering for 6684a8ac-a3f1-4466-92f5-961694027053:97405800-7778-45ef-8062-57c8fd694809
+[I 2025-08-07 10:37:40.011 ServerApp] Starting buffering for d817b2e1-e05a-4dfb-b5c0-34a7cd0900ac:f2f0682a-77d2-4208-ab1b-d42f74c1ec0e
+[I 2025-08-07 10:37:40.012 ServerApp] Starting buffering for 3b639e18-c208-4cd1-bca3-821ed217a68b:38dda96a-0e32-434f-9d38-f054c10c64c1
+[I 2025-08-07 10:37:40.113 ServerApp] Starting buffering for 30c9e1b6-c73d-4bd7-a4e2-76a572cdd5e9:59510164-2580-4841-a81e-f0b989089de1
+[I 2025-08-07 10:37:40.114 ServerApp] Starting buffering for fa7ac1cc-5df0-488e-a1b6-14ced3820966:ba2dfc04-7865-4c9c-991d-4623bd8028d4
+[I 2025-08-07 10:37:53.052 ServerApp] Connecting to kernel 9ee6d643-836e-478d-b01f-4bd97e3f4b1a.
+[I 2025-08-07 10:39:18.331 ServerApp] Connecting to kernel 30c9e1b6-c73d-4bd7-a4e2-76a572cdd5e9.
+[I 2025-08-07 10:39:23.701 ServerApp] Connecting to kernel fa7ac1cc-5df0-488e-a1b6-14ced3820966.
+[I 2025-08-07 10:39:28.909 ServerApp] Connecting to kernel 6684a8ac-a3f1-4466-92f5-961694027053.
+[I 2025-08-07 10:39:33.770 ServerApp] Connecting to kernel d817b2e1-e05a-4dfb-b5c0-34a7cd0900ac.
+[I 2025-08-07 10:39:38.080 ServerApp] Connecting to kernel 3b639e18-c208-4cd1-bca3-821ed217a68b.

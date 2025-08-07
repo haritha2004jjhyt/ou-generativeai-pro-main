@@ -1,0 +1,21 @@
+ssh -i .ssh/genailabskey opc@92.5.115.224  (To start the instance)
+
+
+Firewall and IP commands
+sudo firewall-cmd --zone=public --add-port=8888/tcp --permanent
+sudo firewall-cmd --zone=public --add-port=8501/tcp --permanent
+sudo firewall-cmd --zone=public --add-port=1521/tcp --permanent
+sudo firewall-cmd --reload
+sudo iptables -A INPUT -p tcp --dport 8888 -j ACCEPT
+sudo iptables -A INPUT -p tcp --dport 8888 -j ACCEPT
+sudo iptables -A INPUT -p tcp --dport 8501 -j ACCEPT
+sudo iptables -A INPUT -p tcp --dport 1521 -j ACCEPT
+cd labs/
+source $HOME/.bashrc
+python --version
+tree $HOME/labs
+\--------------------------------
+nohup jupyter-lab --no-browser --ip 0.0.0.0 --NotebookApp.token='' --NotebookApp.password='' --port 8888 &
+\--------------------------------
+
+
