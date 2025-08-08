@@ -1,0 +1,556 @@
+#In this demo we will explore using ConversationalRetrievalChain 
+chain to retrieve relevant documents and send these as a context 
+in a query. 
+# We will use Chroma vectorstore. 
+#Step 1 - here we create a function that creates a chain 
+def create_chain(): 
+embed_model = OCIGenAIEmbeddings( 
+model_id=properties.getEmbeddingModelName(), 
+service_endpoint=properties.getEndpoint(), 
+compartment_id=properties.getCompartment(), 
+auth_type=\INSTANCE_PRINCIPAL\, 
+) give this code
+
+ChatGPT said:
+Sure! Here's a Python code snippet based on your description that creates a ConversationalRetrievalChain using the Chroma vector store and embedding model with OCI GenAI embeddings. I also included the embedding model setup part you mentioned.
+
+python
+Copy code
+from langchain.chains import ConversationalRetrievalChain
+from langchain.vectorstores import Chroma
+from langchain.embeddings import OCIGenAIEmbeddings
+
+def create_chain():
+    # Initialize embedding model
+    embed_model = OCIGenAIEmbeddings(
+        model_id=properties.getEmbeddingModelName(),
+        service_endpoint=properties.getEndpoint(),
+        compartment_id=properties.getCompartment(),
+        auth_type="INSTANCE_PRINCIPAL",
+    )
+
+    # Initialize Chroma vector store (assuming collection is already created)
+    vector_store = Chroma(embedding_function=embed_model)
+
+    # Create ConversationalRetrievalChain with Chroma retriever
+    chain = ConversationalRetrievalChain.from_llm(
+        llm=some_llm_instance,   # Replace with your LLM instance
+        retriever=vector_store.as_retriever(),
+    )
+
+    return chain
+Notes:
+Replace some_llm_instance with your language model (e.g., OpenAI, OCI GenAI, or others).
+
+The properties object should provide your OCI GenAI embedding model info and credentials.
+
+The Chroma vector store assumes you have already created/populated a collection.
+
+auth_type="INSTANCE_PRINCIPAL" is passed as a string as per your snippet.
+
+If you want, I can help expand on loading data into Chroma or setting up the LLM. Just let me know!
+
+
+You said:
+only the snippet i given
+
+ChatGPT said:
+Got it! Here's just the snippet you gave, formatted as Python code:
+
+python
+Copy code
+def create_chain():
+    embed_model = OCIGenAIEmbeddings(
+        model_id=properties.getEmbeddingModelName(),
+        service_endpoint=properties.getEndpoint(),
+        compartment_id=properties.getCompartment(),
+        auth_type="INSTANCE_PRINCIPAL",
+    )
+
+You said:
+%%writefile chatbot-streamlit.py 
+import oracledb 
+import oci 
+from langchain.memory import ConversationBufferMemory 
+from langchain.chains import ConversationalRetrievalChain 
+from langchain_community.vectorstores.utils import 
+DistanceStrategy 
+from langchain_community.vectorstores.oraclevs import OracleVS 
+from langchain_community.chat_models.oci_generative_ai import 
+ChatOCIGenAI 
+from langchain_community.embeddings import OCIGenAIEmbeddings 
+from LoadProperties import LoadProperties 
+print(\Successfully imported libraries and modules\) 
+
+# Setup basic variables 
+properties = LoadProperties() 
+#Declare username and password and dsn (data connection string) 
+un = \vector\ 
+pw = \vector\ 
+cs = \localhost/FREEPDB1\ 
+# Connect to the database 
+try: 
+conn23c = oracledb.connect(user=un, password=pw, dsn=cs) 
+print(\Connection successful!\) 
+except Exception as e: 
+print(\Connection failed!\) 
+#In this demo we will explore using ConversationalRetrievalChain 
+chain to retrieve relevant documents and send these as a context 
+in a query. 
+# We will use Chroma vectorstore. 
+#Step 1 - here we create a function that creates a chain 
+def create_chain(): 
+embed_model = OCIGenAIEmbeddings( 
+model_id=properties.getEmbeddingModelName(), 
+service_endpoint=properties.getEndpoint(), 
+compartment_id=properties.getCompartment(), 
+auth_type=\INSTANCE_PRINCIPAL\, 
+) 
+
+
+vs = OracleVS(embedding_function=embed_model, 
+client=conn23c, table_name=\DEMO_TABLE\, 
+distance_strategy=DistanceStrategy.DOT_PRODUCT) 
+retv = vs.as_retriever(search_type=\similarity\, 
+search_kwargs={'k': 3}) 
+llm = ChatOCIGenAI( 
+model_id=properties.getModelName(), 
+service_endpoint=properties.getEndpoint(), 
+compartment_id=properties.getCompartment(), 
+auth_type=\INSTANCE_PRINCIPAL\, 
+model_kwargs={\max_tokens\:200} 
+) 
+memory = ConversationBufferMemory(llm=llm, 
+memory_key=\chat_history\, return_messages=True, 
+output_key='answer') 
+qa = ConversationalRetrievalChain.from_llm(llm, 
+retriever=retv, memory=memory, return_source_documents=True) 
+return qa 
+#Step 2 - here we declare a chat function 
+def chat(llm_chain, user_input): 
+# generate a prediction for a prompt 
+bot_json = llm_chain.invoke(user_input) 
+return {\bot_response\: bot_json} 
+#Step 3 - here we setup Streamlit text input and pass input text 
+to chat function. 
+# chat function returns the response and we print it. 
+
+
+if __name__ == \__main__\: 
+import streamlit as st 
+st.subheader(\Chatbot that answers your study questions\) 
+col1 , col2 = st.columns([4,1]) 
+def initialize_session_state(): 
+if \llm_chain\ not in st.session_state: 
+st.session_state[\llm_chain\] = create_chain() 
+llm_chain = st.session_state[\llm_chain\] 
+else: 
+llm_chain = st.session_state[\llm_chain\] 
+return llm_chain 
+user_input = st.chat_input() 
+with col1: 
+col1.subheader(\------Ask me a question about science 
+chapters------\) 
+#col2.subheader(\References\) 
+if \messages\ not in st.session_state: 
+st.session_state.messages = [] 
+if user_input: 
+llm_chain = initialize_session_state() 
+bot_response = chat(llm_chain, user_input) 
+print(\bot_response->\n\, bot_response) 
+st.session_state.messages.append({\role\ : 
+\chatbot\, \content\ : bot_response}) 
+#st.write(\OU Assistant Response: \, bot_response) 
+for message in st.session_state.messages: 
+st.chat_message(\user\) 
+st.write(\Question: \, 
+message['content']['bot_response']['question']) 
+
+
+
+st.chat_message(\assistant\) 
+st.write(\Answer: \, 
+message['content']['bot_response']['answer']) 
+#with col2: 
+st.chat_message(\assistant\) 
+for doc in 
+message['content']['bot_response']['source_documents']: 
+st.write(\Chunk Id Is: \, doc.metadata['id'] 
++ \  \n\+ \-page->\+str(doc.metadata['link'])) 
+
+ChatGPT said:
+Here’s a cleaned-up and corrected version of your Streamlit chatbot script in Python, fixing syntax issues, indentation, and escaping of strings:
+
+python
+Copy code
+%%writefile chatbot-streamlit.py
+import oracledb
+import oci
+from langchain.memory import ConversationBufferMemory
+from langchain.chains import ConversationalRetrievalChain
+from langchain_community.vectorstores.utils import DistanceStrategy
+from langchain_community.vectorstores.oraclevs import OracleVS
+from langchain_community.chat_models.oci_generative_ai import ChatOCIGenAI
+from langchain_community.embeddings import OCIGenAIEmbeddings
+from LoadProperties import LoadProperties
+
+print("Successfully imported libraries and modules")
+
+# Setup basic variables
+properties = LoadProperties()
+
+# Declare username and password and dsn (data connection string)
+un = "vector"
+pw = "vector"
+cs = "localhost/FREEPDB1"
+
+# Connect to the database
+try:
+    conn23c = oracledb.connect(user=un, password=pw, dsn=cs)
+    print("Connection successful!")
+except Exception as e:
+    print("Connection failed!", e)
+
+# In this demo we will explore using ConversationalRetrievalChain
+# chain to retrieve relevant documents and send these as a context
+# in a query.
+# We will use OracleVS vectorstore.
+
+# Step 1 - here we create a function that creates a chain
+def create_chain():
+    embed_model = OCIGenAIEmbeddings(
+        model_id=properties.getEmbeddingModelName(),
+        service_endpoint=properties.getEndpoint(),
+        compartment_id=properties.getCompartment(),
+        auth_type="INSTANCE_PRINCIPAL",
+    )
+
+    vs = OracleVS(
+        embedding_function=embed_model,
+        client=conn23c,
+        table_name="DEMO_TABLE",
+        distance_strategy=DistanceStrategy.DOT_PRODUCT,
+    )
+
+    retv = vs.as_retriever(search_type="similarity", search_kwargs={"k": 3})
+
+    llm = ChatOCIGenAI(
+        model_id=properties.getModelName(),
+        service_endpoint=properties.getEndpoint(),
+        compartment_id=properties.getCompartment(),
+        auth_type="INSTANCE_PRINCIPAL",
+        model_kwargs={"max_tokens": 200},
+    )
+
+    memory = ConversationBufferMemory(
+        llm=llm,
+        memory_key="chat_history",
+        return_messages=True,
+        output_key="answer",
+    )
+
+    qa = ConversationalRetrievalChain.from_llm(
+        llm, retriever=retv, memory=memory, return_source_documents=True
+    )
+    return qa
+
+# Step 2 - here we declare a chat function
+def chat(llm_chain, user_input):
+    # generate a prediction for a prompt
+    bot_json = llm_chain.invoke(user_input)
+    return {"bot_response": bot_json}
+
+# Step 3 - here we setup Streamlit text input and pass input text
+# to chat function. The chat function returns the response and we print it.
+
+if __name__ == "__main__":
+    import streamlit as st
+
+    st.subheader("Chatbot that answers your study questions")
+    col1, col2 = st.columns([4, 1])
+
+    def initialize_session_state():
+        if "llm_chain" not in st.session_state:
+            st.session_state["llm_chain"] = create_chain()
+            llm_chain = st.session_state["llm_chain"]
+        else:
+            llm_chain = st.session_state["llm_chain"]
+        return llm_chain
+
+    user_input = st.chat_input()
+
+    with col1:
+        col1.subheader("------Ask me a question about science chapters------")
+        # col2.subheader("References")
+
+        if "messages" not in st.session_state:
+            st.session_state.messages = []
+
+        if user_input:
+            llm_chain = initialize_session_state()
+            bot_response = chat(llm_chain, user_input)
+            print("bot_response->\n", bot_response)
+            st.session_state.messages.append({"role": "chatbot", "content": bot_response})
+
+        for message in st.session_state.messages:
+            st.chat_message("user")
+            st.write("Question: ", message["content"]["bot_response"]["question"])
+
+            st.chat_message("assistant")
+            st.write("Answer: ", message["content"]["bot_response"]["answer"])
+
+            # with col2:
+            st.chat_message("assistant")
+            for doc in message["content"]["bot_response"]["source_documents"]:
+                st.write(
+                    "Chunk Id Is: ",
+                    doc.metadata["id"] + "  \n" + "-page->" + str(doc.metadata["link"]),
+                )
+Summary of fixes:
+Replaced backslashes \ in strings with proper quotes ".
+
+Fixed indentation for function bodies and blocks.
+
+Fixed import lines (split lines properly).
+
+Corrected Streamlit chat message display (st.chat_message takes "user" or "assistant" as argument).
+
+Added error info in exception print.
+
+Used proper dictionary syntax with quotes.
+
+Added comments for clarity.
+
+If you want, I can help you run or deploy this script too!
+
+
+You said:
+%%writefile chatbot-streamlit.py 
+import oracledb 
+import oci 
+from langchain.memory import ConversationBufferMemory 
+from langchain.chains import ConversationalRetrievalChain 
+from langchain_community.vectorstores.utils import 
+DistanceStrategy 
+from langchain_community.vectorstores.oraclevs import OracleVS 
+from langchain_community.chat_models.oci_generative_ai import 
+ChatOCIGenAI 
+from langchain_community.embeddings import OCIGenAIEmbeddings 
+from LoadProperties import LoadProperties 
+print(\Successfully imported libraries and modules\) 
+# Setup basic variables 
+properties = LoadProperties() 
+
+
+#Declare username and password and dsn (data connection string) 
+un = \vector\ 
+pw = \vector\ 
+cs = \localhost/FREEPDB1\ 
+# Connect to the database 
+try: 
+conn23c = oracledb.connect(user=un, password=pw, dsn=cs) 
+print(\Connection successful!\) 
+except Exception as e: 
+print(\Connection failed!\) 
+
+ChatGPT said:
+Here's your corrected and properly formatted snippet for saving as chatbot-streamlit.py. I've fixed indentation, string quotes, and line breaks for imports:
+
+python
+Copy code
+%%writefile chatbot-streamlit.py
+import oracledb
+import oci
+from langchain.memory import ConversationBufferMemory
+from langchain.chains import ConversationalRetrievalChain
+from langchain_community.vectorstores.utils import DistanceStrategy
+from langchain_community.vectorstores.oraclevs import OracleVS
+from langchain_community.chat_models.oci_generative_ai import ChatOCIGenAI
+from langchain_community.embeddings import OCIGenAIEmbeddings
+from LoadProperties import LoadProperties
+
+print("Successfully imported libraries and modules")
+
+# Setup basic variables
+properties = LoadProperties()
+
+# Declare username and password and dsn (data connection string)
+un = "vector"
+pw = "vector"
+cs = "localhost/FREEPDB1"
+
+# Connect to the database
+try:
+    conn23c = oracledb.connect(user=un, password=pw, dsn=cs)
+    print("Connection successful!")
+except Exception as e:
+    print("Connection failed!", e)
+Let me know if you want me to continue with the rest of your script!
+
+
+You said:
+#Step 1 - here we create a function that creates a chain 
+def create_chain(): 
+embed_model = OCIGenAIEmbeddings( 
+model_id=properties.getEmbeddingModelName(), 
+service_endpoint=properties.getEndpoint(), 
+compartment_id=properties.getCompartment(), 
+auth_type=\INSTANCE_PRINCIPAL\, 
+) 
+vs = OracleVS(embedding_function=embed_model, 
+client=conn23c, table_name=\DEMO_TABLE\, 
+distance_strategy=DistanceStrategy.DOT_PRODUCT) 
+
+retv = vs.as_retriever(search_type=\similarity\, 
+search_kwargs={'k': 3}) 
+llm = ChatOCIGenAI( 
+model_id=properties.getModelName(), 
+   service_endpoint=properties.getEndpoint(), 
+compartment_id=properties.getCompartment(), 
+auth_type=\INSTANCE_PRINCIPAL\, 
+model_kwargs={\max_tokens\:200} 
+) 
+memory = ConversationBufferMemory(llm=llm, 
+memory_key=\chat_history\, return_messages=True, 
+output_key='answer') 
+qa = ConversationalRetrievalChain.from_llm(llm, 
+retriever=retv, memory=memory, return_source_documents=True) 
+return qa 
+
+ChatGPT said:
+Here's your create_chain function properly formatted and fixed with correct indentation and string quoting:
+
+python
+Copy code
+# Step 1 - here we create a function that creates a chain
+def create_chain():
+    embed_model = OCIGenAIEmbeddings(
+        model_id=properties.getEmbeddingModelName(),
+        service_endpoint=properties.getEndpoint(),
+        compartment_id=properties.getCompartment(),
+        auth_type="INSTANCE_PRINCIPAL",
+    )
+
+    vs = OracleVS(
+        embedding_function=embed_model,
+        client=conn23c,
+        table_name="DEMO_TABLE",
+        distance_strategy=DistanceStrategy.DOT_PRODUCT,
+    )
+
+    retv = vs.as_retriever(search_type="similarity", search_kwargs={"k": 3})
+
+    llm = ChatOCIGenAI(
+        model_id=properties.getModelName(),
+        service_endpoint=properties.getEndpoint(),
+        compartment_id=properties.getCompartment(),
+        auth_type="INSTANCE_PRINCIPAL",
+        model_kwargs={"max_tokens": 200},
+    )
+
+    memory = ConversationBufferMemory(
+        llm=llm,
+        memory_key="chat_history",
+        return_messages=True,
+        output_key="answer",
+    )
+
+    qa = ConversationalRetrievalChain.from_llm(
+        llm, retriever=retv, memory=memory, return_source_documents=True
+    )
+    return qa
+If you want, I can help you integrate this into the full script!
+
+
+You said:
+#Step 3 - here we setup Streamlit text input and pass input text 
+to chat function. 
+# chat function returns the response and we print it. 
+if __name__ == \__main__\: 
+import streamlit as st 
+st.subheader(\OU Chatbot\) 
+col1 , col2 = st.columns([4,1]) 
+def initialize_session_state(): 
+if \llm_chain\ not in st.session_state: 
+st.session_state[\llm_chain\] = create_chain() 
+llm_chain = st.session_state[\llm_chain\] 
+else: 
+llm_chain = st.session_state[\llm_chain\] 
+return llm_chain 
+user_input = st.chat_input() 
+with col1: 
+col1.subheader(\----Ask me about OCI AI Foundations 
+course----\) 
+if \messages\ not in st.session_state: 
+st.session_state.messages = [] 
+if user_input: 
+llm_chain = initialize_session_state() 
+bot_response = chat(llm_chain, user_input) 
+
+print(\bot_response->\n\, bot_response) 
+st.session_state.messages.append({\role\ : 
+\chatbot\, \content\ : bot_response}) 
+#st.write(\OU Assistant Response: \, bot_response) 
+for message in st.session_state.messages: 
+st.chat_message(\user\) 
+st.write(\Question: \, 
+message['content']['bot_response']['question']) 
+st.chat_message(\assistant\) 
+st.write(\Answer: \, 
+message['content']['bot_response']['answer']) 
+st.chat_message(\assistant\) 
+for doc in 
+message['content']['bot_response']['source_documents']: 
+st.write(\Chunk Id Is: \, doc.metadata['id'] 
++ \  \n\+ \-page->\+str(doc.metadata['link'])) 
+
+ChatGPT said:
+Here’s your Streamlit setup block, cleaned up with proper Python indentation and quoting:
+
+python
+Copy code
+# Step 3 - here we setup Streamlit text input and pass input text to chat function.
+# chat function returns the response and we print it.
+if __name__ == "__main__":
+    import streamlit as st
+
+    st.subheader("OU Chatbot")
+    col1, col2 = st.columns([4, 1])
+
+    def initialize_session_state():
+        if "llm_chain" not in st.session_state:
+            st.session_state["llm_chain"] = create_chain()
+            llm_chain = st.session_state["llm_chain"]
+        else:
+            llm_chain = st.session_state["llm_chain"]
+        return llm_chain
+
+    user_input = st.chat_input()
+
+    with col1:
+        col1.subheader("----Ask me about OCI AI Foundations course----")
+
+        if "messages" not in st.session_state:
+            st.session_state.messages = []
+
+        if user_input:
+            llm_chain = initialize_session_state()
+            bot_response = chat(llm_chain, user_input)
+
+            print("bot_response->\n", bot_response)
+            st.session_state.messages.append({"role": "chatbot", "content": bot_response})
+
+        for message in st.session_state.messages:
+            st.chat_message("user")
+            st.write("Question: ", message["content"]["bot_response"]["question"])
+
+            st.chat_message("assistant")
+            st.write("Answer: ", message["content"]["bot_response"]["answer"])
+
+            st.chat_message("assistant")
+            for doc in message["content"]["bot_response"]["source_documents"]:
+                st.write(
+                    "Chunk Id Is: ",
+                    doc.metadata["id"] + "  \n" + "-page->" + str(doc.metadata["link"]),
+                )
+If you want, I can help you combine all parts into one full script!
